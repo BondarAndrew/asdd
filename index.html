@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Форма з виведенням дат</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="note">Примітка:</label><br>
+        <textarea id="note" name="note" rows="4" cols="50"></textarea><br>
+        
+        <label for="category">Категорія:</label>
+        <select id="category" name="category">
+            <option value="personal">Особисте</option>
+            <option value="work">Робота</option>
+            <option value="other">Інше</option>
+        </select><br>
+        
+        <label for="date">Дата:</label>
+        <input type="text" id="date" name="date" placeholder="ДД.ММ.РРРР"><br>
+        
+        <button type="button" onclick="showValues()">Показати значення</button>
+    </form>
+    
+    <div id="result"></div>
+    <div id="datesList"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
